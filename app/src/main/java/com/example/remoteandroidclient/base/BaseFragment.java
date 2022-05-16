@@ -1,7 +1,5 @@
 package com.example.remoteandroidclient.base;
 
-import androidx.fragment.app.Fragment;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -17,6 +15,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import butterknife.ButterKnife;
 
@@ -24,11 +23,10 @@ public abstract class BaseFragment extends Fragment {
 
     public Activity mActivity;
 
-    @Override
+
     public Context getContext() {
         return getActivity();
     }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

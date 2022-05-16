@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="myselfColor">#19B9FF</color>
+    <color name="common_f7">#F7F7F7</color>
+    <color name="color1">#e6e6e6</color>
 </resources>

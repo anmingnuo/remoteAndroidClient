@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tb_toolbar"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
     android:fitsSystemWindows="true"
-    android:orientation="horizontal">
+    android:minHeight="48dp"
+    app:contentInsetStart="0dp">
+
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="48dp"
+        android:fitsSystemWindows="true">
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/bg_toolbar_default" />-->
 
         <ImageView
             android:id="@+id/iv_back"
@@ -15,7 +28,8 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dp"
             android:padding="8dp"
-            android:visibility="visible"/>
+            android:visibility="visible" />
+        <!--新增一个布局 为了增时间点击范围-->
 
         <TextView
             android:id="@+id/tv_title"
@@ -23,8 +37,11 @@
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
             android:gravity="center_vertical"
-            android:textColor="@color/black"
+            android:tag="skin:white_99:textColor"
+            android:textColor="@color/white"
             android:textSize="20sp" />
+
+
         <ImageView
             android:id="@+id/iv_right"
             android:layout_width="35dp"
@@ -34,6 +51,20 @@
             android:layout_marginRight="2dp"
             android:padding="8dp"
             android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            tools:text="111111"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
         <ImageView
             android:id="@+id/iv_right2"
             android:layout_width="35dp"
@@ -43,9 +74,7 @@
             android:layout_toLeftOf="@+id/iv_right"
             android:padding="8dp"
             android:visibility="gone" />
-
-
     </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
 
 
-</LinearLayout>

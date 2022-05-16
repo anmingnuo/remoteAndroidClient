@@ -16,7 +16,7 @@ public class RemoteFragment extends BaseFragment {
 
     @Override
     protected int createLayout() {
-        return R.layout.fragment_equip;
+        return R.layout.fragment_assistance;
     }
 
     @Override
